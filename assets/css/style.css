@@ -37,6 +37,29 @@ a:hover {
     background: #171100;
     border-radius: 24.5px;
 }
+.heading {
+    color: #171100;
+    font-family: Sen;
+    font-weight: 700;
+    letter-spacing: -1.16px;
+}
+.heading.h1 {
+    font-size: 5.8rem;
+    line-height: 1.1724;
+}
+.heading.h2 {
+    letter-spacing: -0.02em;
+    font-size: 3.8rem;
+}
+.desc {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 /* =====================Header================ */
 
 .header {
@@ -174,18 +197,9 @@ a:hover {
     padding-left: 130px;
 }
 /* =============Info-hero=========== */
-.hero .info h1 {
-    color: #171100;
-    font-family: Sen;
-    font-size: 5.8rem;
-    font-weight: 700;
-    line-height: 1.1724;
-    letter-spacing: -1.16px;
-}
+
 .hero .info .desc {
     color: #5f5b53;
-    font-size: 1.8rem;
-    line-height: 1.66667;
 }
 .hero .info .desc-01 {
     margin-top: 22px;
@@ -256,4 +270,51 @@ a:hover {
 }
 .hero .info .data-source strong:first-child {
     margin-left: -0px;
+}
+/* =============Làm phần Popular #1=========== */
+.popular {
+    margin-top: 200px;
+}
+.heading-popular {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .heading-popular h2 {
+    font-family: Sen;
+
+    font-weight: 700;
+    
+    text-align: left;
+} */
+.heading-popular .desc {
+    margin-top: 16px;
+    width: 458px;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.heading-popular .control {
+    display: flex;
+    gap: 18px;
+}
+.heading-popular .contro-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    background: #fff;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+.heading-popular .contro-btn:hover {
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #fff;
 }
