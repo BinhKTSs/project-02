@@ -58,6 +58,7 @@ a:hover {
     line-height: 1.67;
     letter-spacing: 0em;
     text-align: left;
+    color: #5f5b53;
 }
 
 /* =====================Header================ */
@@ -290,13 +291,8 @@ a:hover {
 .heading-popular .desc {
     margin-top: 16px;
     width: 458px;
-    font-family: Poppins;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-    text-align: left;
 }
+
 .heading-popular .control {
     display: flex;
     gap: 18px;
@@ -317,4 +313,61 @@ a:hover {
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
     color: #fff;
+}
+/* =============Làm phần course-list #1=========== */
+.courses .course-list {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+.courses .courses-item {
+    max-width: 33%;
+    box-shadow: 0px 18px 36px 0px #0000000d;
+}
+.courses .courses-item .thumb {
+    width: 370px;
+    height: 278px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+.courses .infor {
+    padding: 16px 22px 22px;
+}
+.courses .head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.courses .head .title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+}
+.courses .head .rating {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.courses .infor > .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.courses .bottom {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses .bottom .price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.courses .bottom > .cta:hover {
+    background: var(--primary-color);
 }
