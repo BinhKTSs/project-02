@@ -22,7 +22,8 @@ a {
     text-decoration: none;
 }
 a:hover {
-    opacity: 70%;
+    opacity: 90%;
+    cursor: pointer;
 }
 
 .btn {
@@ -36,6 +37,7 @@ a:hover {
     color: #ffffff;
     background: #171100;
     border-radius: 24.5px;
+    cursor: pointer;
 }
 .heading {
     color: #171100;
@@ -59,6 +61,12 @@ a:hover {
     letter-spacing: 0em;
     text-align: left;
     color: #5f5b53;
+}
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* =====================Header================ */
@@ -191,6 +199,7 @@ a:hover {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.66667;
+    word-break: break-all;
 }
 
 .hero .info {
@@ -321,28 +330,43 @@ a:hover {
     margin-top: 55px;
 }
 .courses .courses-item {
-    max-width: 33%;
+    /* max-width: 33%; */
+    flex: 1;
+    border: 1px solid #e2dfda;
+    border-radius: 12px;
+}
+.courses .courses-item:hover {
     box-shadow: 0px 18px 36px 0px #0000000d;
+    border-color: transparent;
 }
 .courses .courses-item .thumb {
-    width: 370px;
+    /* width: 370px; */
+    width: calc(100% + 2px);
     height: 278px;
+    margin: -1px;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
 }
 .courses .infor {
     padding: 16px 22px 22px;
 }
-.courses .head {
+.courses .head,
+.courses .bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.courses .head .title {
+.courses .head .title a {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.6;
+    color: #171100;
+    word-break: break-all;
 }
+.courses .head .title {
+    padding-right: 5px;
+}
+
 .courses .head .rating {
     color: var(--primary-color);
     display: flex;
@@ -355,18 +379,20 @@ a:hover {
     line-height: 1.85;
     letter-spacing: 0em;
     text-align: left;
+    --line-clamp: 2;
+    word-break: break-all;
 }
 
 .courses .bottom {
     margin-top: 12px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .courses .bottom .price {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67;
+}
+.courses .bottom .cta {
+    border: none;
 }
 .courses .bottom > .cta:hover {
     background: var(--primary-color);
