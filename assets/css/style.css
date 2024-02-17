@@ -397,3 +397,75 @@ a:hover {
 .courses .bottom > .cta:hover {
     background: var(--primary-color);
 }
+/* =============make-part-feed-back=========== */
+.feedback {
+    background: #2e2100;
+}
+.feedback .feedback-list {
+    margin-top: 135px;
+    display: flex;
+    overflow: hidden;
+}
+.feedback > .main-content .feedback-list .feedback-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 96px 0px;
+    flex-shrink: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: all ease 0.3s;
+}
+
+.feedback .thumb {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.feedback .title {
+    margin-top: 18px;
+    font-family: Sen;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41;
+    text-align: left;
+    color: #f7f7f7;
+    display: block;
+}
+.feedback .content-feedback {
+    width: 68%;
+}
+.feedback .content-feedback .content {
+    margin-left: 30px;
+    font-size: 2.25rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.52;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.feedback .info > .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.feedback .list-dot {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+    gap: 6px;
+}
+.feedback .list-dot .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+.feedback .list-dot .active {
+    background: #ffb900;
+}
