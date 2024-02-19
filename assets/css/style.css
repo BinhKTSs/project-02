@@ -341,7 +341,7 @@ a:hover {
     box-shadow: 0px 18px 36px 0px #0000000d;
     border-color: transparent;
     border-radius: 16px;
-    padding-bottom: 96px;
+    /* padding-bottom: 96px; */
 }
 .courses .courses-item .thumb {
     /* width: 370px; */
@@ -661,4 +661,92 @@ a:hover {
 .our-blog .list-dot .dot-active {
     background: var(--primary-color);
     cursor: default;
+}
+/* ================ make Part Footer  */
+.footer {
+    background: #2e2100;
+    padding-top: 96px;
+}
+.footer .menu-footer {
+    display: flex;
+    gap: 130px;
+}
+.footer .sub-menu-footer {
+    min-width: 130px;
+}
+.footer .intro {
+    margin-right: 15px;
+    width: 35%;
+}
+.footer .intro .desc {
+    margin: 18px 0px;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 267px;
+    color: #bfbcb2;
+}
+.footer .intro .social-logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.footer .title-footer {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+    position: relative;
+    padding: 0px 48px 14px 0px;
+}
+.footer .title-footer::after {
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.footer .main-content ul {
+    list-style: none;
+    margin-top: 28px;
+}
+.footer .main-content ul li a,
+.footer .main-content ul li p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #bfbcb2;
+}
+.footer .main-content ul li strong {
+    font-weight: 600;
+    color: #fff;
+}
+.footer .main-content ul li {
+    margin-top: 12px;
+}
+
+/* Line-footer */
+.footer .line-footer {
+    margin-top: 38px;
+    width: 100%;
+    height: 1px;
+    background: #59554b;
+}
+.footer .coppy-right {
+    padding: 28px 0px;
+
+    display: block;
+    text-align: center;
+    color: #807d74;
 }
